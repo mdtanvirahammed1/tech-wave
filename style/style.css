@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.font-style-inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+.bg-color{
+    background-color: rgba(26,11,46,1);
+}
+/* shared style  */
+.display-flex{
+    display: flex;
+}
+/* color 1 */
+.white{
+    color: rgba(255, 255, 255, 1);
+}
+
+/* header  */
+.header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 200px; 
+}
+
+/* Logo */
+.logo {
+    padding: 30px;
+    width: 219px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+/* Nav Menu */
+.nav-menu {
+    list-style: none;
+    gap: 32px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-menu li {
+    cursor: pointer;
+}
+
+
+.subscribe-btn {
+    display: flex; 
+}
+
+.subscribe-btn button {
+    height: 44px;
+    width: 135px;
+    border: none;
+    border-radius: 10000px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background: linear-gradient(47.64deg, rgb(247, 233, 63) 0%, rgb(251, 9, 180) 50%, rgb(145, 0, 248) 100%);
+}
+
+.subscribe-btn button img {
+    width: 20px;
+}
+.subscribe-btn button:hover {
+    opacity: 0.9;
+}
+/* Hamburger */
+.hamburger {
+    display: none; 
+    width: 32px;
+    cursor: pointer;
+}
+
+.hamburger img {
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        padding: 0 24px; 
+    }
+
+    .nav-menu {
+        display: none; 
+    }
+
+    .subscribe-btn {
+        display: none; 
+    }
+
+    .hamburger {
+        display: block; 
+    }
+}
