@@ -185,6 +185,7 @@ header {
 }
 
 .btn-primary:hover {
+    transform: translateY(-2px);
     opacity: 0.85;
 }
 
@@ -196,7 +197,7 @@ header {
 }
 
 .btn-secondary:hover {
-    background: #00FF90;
+    background: #1e4d39;
     color: #000;
 }
 
@@ -216,5 +217,39 @@ header {
 
     .hamburger {
         display: block;
+    }
+}
+@media (max-width: 768px) {
+    .hero-parents {
+        height: auto;
+        padding: 40px 10px;
+    }
+
+    .hero-image {
+        margin: 60px 0;
+        display: inline-block;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: nowrap;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+        white-space: nowrap;
     }
 }
