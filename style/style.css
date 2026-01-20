@@ -28,6 +28,7 @@ header {
 }
 
 .navbar {
+    
     align-items: center;
     justify-content: space-between;
     padding: 0 200px;
@@ -697,7 +698,7 @@ header {
     margin-right: auto;
 }
 
-.logo {
+.footer-logo {
 
     margin-top: 120px;
     margin-bottom: 30px;
@@ -748,7 +749,7 @@ header {
         padding: 40px 15px;
     }
 
-    .logo {
+    .footer-logo {
         margin-top: 40px;
         max-width: 200px;
         height: auto;
