@@ -747,36 +747,41 @@ header {
     .techwave-footer {
         margin-top: 60px;
         padding: 40px 15px;
+        text-align: center; 
     }
 
-    .footer-logo {
-        margin-top: 40px;
-        max-width: 200px;
-        height: auto;
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
 
     .social-links {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        width: 100%;
         margin-bottom: 30px;
     }
 
     .link-row {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, auto); 
         gap: 20px;
-        align-items: center;
+        justify-content: center; 
+        width: 100%;
     }
 
     .social-links a {
         font-size: 1rem;
+        justify-content: center; 
     }
 
     .copyright {
         font-size: 0.75rem;
         margin-top: 20px;
         text-align: center;
+        width: 100%;
     }
 }
