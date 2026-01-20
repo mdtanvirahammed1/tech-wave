@@ -316,6 +316,7 @@ header {
     margin: 0;
     text-transform: uppercase;
 }
+
 @media screen and (max-width: 576px) {
     #about {
         padding: 60px 20px;
@@ -336,7 +337,7 @@ header {
 
     .pod-card-container {
         margin-top: 60px;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 40px;
     }
 
@@ -346,5 +347,91 @@ header {
 
     .pod-card p {
         font-size: 0.9rem;
+    }
+}
+
+#choose-container {
+    background-color: rgba(35, 14, 61, 1);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#choose-container h2 {
+    font-style: Bold;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 58px;
+}
+
+.card-audio {
+    grid-area: audio;
+}
+
+.card-mobile {
+    grid-area: mobile;
+}
+
+.card-community {
+    grid-area: community;
+}
+
+.card-interviews {
+    grid-area: interview;
+}
+
+.card-resources {
+    grid-area: resources;
+}
+
+.choose-container-card {
+    display: grid;
+    max-width: 1200px;
+    margin: 40px auto 0;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "audio mobile mobile"
+        "audio community community"
+        "interview interview resources";
+}
+
+
+.choose-card {
+    background: rgba(53, 17, 101, 0.4);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(145, 0, 248, 1);
+    text-align: left;
+}
+
+.choose-card img {
+    width: 40px;
+    margin-bottom: 20px;
+}
+.choose-card h3 {
+    font-style: Bold;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 29px;
+}
+.choose-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    opacity: 0.6;
+}
+
+@media (max-width: 576px) {
+    .choose-container-card {
+        grid-template-areas:
+            "audio"
+            "mobile"
+            "community"
+            "interview"
+            "resources";
+        grid-template-columns: 1fr;
+    }
+
+    #choose-container h2 {
+        font-size: 1rem;
     }
 }
