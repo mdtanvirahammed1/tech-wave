@@ -191,6 +191,7 @@ header {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    transition: transform 0.3s ease;
 }
 
 .btn {
@@ -408,19 +409,21 @@ header {
     width: 40px;
     margin-bottom: 20px;
 }
+
 .choose-card h3 {
     font-style: Bold;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 29px;
 }
+
 .choose-card p {
     font-size: 1rem;
     line-height: 1.5;
     opacity: 0.6;
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
     .choose-container-card {
         grid-template-areas:
             "audio"
@@ -433,5 +436,138 @@ header {
 
     #choose-container h2 {
         font-size: 1rem;
+    }
+}
+
+.episodes-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.episodes-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.episodes-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.episode-card {
+    background-color: rgba(37, 13, 68, 1);
+    border-radius: 20px;
+    overflow: hidden;
+    width: 330px;
+    gap: 30px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.episode-card:hover {
+    transform: translateY(-10px);
+}
+
+.thumbnail-container {
+    position: relative;
+    width: 100%;
+    height: 190px;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.play-btn img {
+    width: 50%;
+    padding: 10px 10px;
+    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
+    border-radius: 50%;
+}
+
+.play-btn:hover {
+    opacity: 0.8;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h3 {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    line-height: 1.4;
+}
+
+.content p {
+    font-size: 14px;
+    color: #b3a8c4;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.duration {
+    font-size: 14px;
+    color: #00ff88;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.duration img {
+    margin-top: 14px;
+    width: 20px;
+}
+
+@media screen and (max-width: 576px) {
+    .episodes-section {
+        margin-top: 60px;
+        padding: 0 15px;
+    }
+
+    .episodes-section h2 {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    .episodes-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .episode-card {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .thumbnail-container {
+        height: 180px;
+    }
+
+    .content h3 {
+        font-size: 1.5rem;
+    }
+
+    .content p {
+        font-size: 0.8125rem;
+        margin-bottom: 15px;
     }
 }
